@@ -15,7 +15,7 @@ searchBtn.addEventListener('click', (e)=>{
 
 //function for FETCH API
 const fetchData = (city) => {
-    fetch(`http://localhost:3000/weather?city=${city}`)
+    fetch(`/weather?city=${city}`)
     .then((response)=> {
         response.json().then((data)=>{
             forecast.innerHTML = data.forecast;
